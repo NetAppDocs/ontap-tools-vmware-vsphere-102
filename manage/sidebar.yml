@@ -1,0 +1,81 @@
+section: manage
+title: Manage ONTAP tools
+entries:
+  - title: NetApp ONTAP tools for VMware vSphere plugin Dashboard overview
+    url: /configure/dashboard-overview.html
+  - title: Manage datastores
+    entries:
+      - title: Create a datastore
+        url: /configure/create-vvols-datastore.html    
+      - title: Mount NFS and VMFS datastore
+        url: /manage/mount-datastores-on-host.html
+      - title: Unmount NFS and VMFS datastore
+        url: /manage/unmount-datastores-on-host.html
+      - title: Mount a vVols datastore
+        url: /manage/mount-a-vvols-datastore.html
+      - title: Resize NFS and VMFS datastore
+        url: /manage/resize-datastores.html
+      - title: Expand vVol datastore
+        url: /manage/expand-storage-of-vvol-datastore.html
+      - title: Shrink vVols datastore
+        url: /manage/remove-storage-from-a-vvols-datastore.html
+      - title: Delete datastores
+        url: /manage/delete-ds.html  
+      - title: ONTAP storage views for datastores
+        url: /manage/storage-view-datastore.html  
+      - title: Virtual machine storage view
+        url: /manage/virtual-machine-storage-view-datastore.html  
+  - title: Manage storage thresholds
+    url: /manage/manage-storage-threshold.html
+  - title: Manage storage backends
+    url: /manage/storage-backend.html
+  - title: Manage vCenter Server instances
+    url: /manage/manage-vcenter.html
+  - title: Manage certificates
+    url: /manage/certificate-manage.html
+  - title: Manage igroups and export policies
+    url: /manage/igroup-management.html
+  - title: Access ONTAP tools for VMware vSphere maintenance console
+    entries:
+    - title: Overview of ONTAP tools for VMware vSphere maintenance console
+      url: /manage/maintenance-console.html
+    - title: Configure remote diagnostic access
+      url: /manage/configure-remote-diagnostic-access.html
+    - title: Start SSH on other nodes
+      url: /manage/start-the-ssh-on-other-nodes.html
+    - title: Update the vCenter server and ONTAP credentials
+      url: /manage/update-vcenter-credentials.html
+  - title: ONTAP tool reports
+    url: /manage/reports.html
+  - title: Collect the log files
+    url: /manage/collect-the-log-files.html
+  - title: Manage virtual machines
+    entries:
+      - title: Considerations to migrate or clone virtual machines
+        url: /manage/migrate-virtual-machines.html
+      - title: Migrate virtual machines with NFS and VMFS datastores to vVols datastores
+        url: /manage/migrate-standard-virtual-machines-to-vvols-datastores.html
+      - title: VASA cleanup
+        url: /manage/delete-virtual-machines.html
+  - title: Discover storage systems and hosts
+    url: /configure/discover-storage-systems-and-hosts.html
+  - title: Modify ESXi host settings
+    url: /manage/edit-esxi-host-settings.html
+  - title: Manage passwords
+    entries:
+      - title: Change ONTAP tools Manager password
+        url: /manage/change-manager-password.html
+      - title: Reset ONTAP tools Manager password
+        url: /manage/reset-manager-password.html
+      - title: Reset application user password
+        url: /manage/reset-app-password.html
+      - title: Reset maintenance console user password
+        url: /manage/reset-maint-password.html
+  - title: Clean up volumes
+    url: /manage/delete-deployment.html
+  - title: Manage host cluster protection
+    entries:
+      - title: Modify host cluster protection
+        url: /manage/edit-hostcluster-protection.html
+      - title: Remove host cluster protection
+        url: /manage/delete-hostcluster-protection.html
