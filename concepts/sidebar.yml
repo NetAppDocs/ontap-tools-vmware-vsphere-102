@@ -1,0 +1,26 @@
+section: concepts
+title: Concepts
+entries:
+  - title: ONTAP tools for VMware vSphere overview
+    url: /concepts/ontap-tools-overview.html
+  - title: Key concepts and terms
+    url: /concepts/ontap-tools-concepts-terms.html
+  - title: Role based access control
+    entries:
+      - title: Overview
+        url: /concepts/vcenter-server-role-based-access-control-features.html
+      - title: vCenter Server permissions
+        url: /concepts/vcenter-server-permissions.html
+      - title: Assign and modify permissions for vCenter Server
+        url: /concepts/key-points-about-assign-and-modify-permissions.html
+      - title: Privileges required for ONTAP tools for VMware vSphere tasks
+        url: /concepts/privileges-required.html
+      - title: Recommended ONTAP roles
+        url: /concepts/ontap-roles.html
+  - title: High availability for ONTAP tools for VMware vSphere
+    url: /concepts/high-availability.html
+  - title: AutoSupport
+    url: /concepts/autosupport.html
+  - title: ONTAP tools Manager user interface
+    url: /configure/manager-user-interface.html
+

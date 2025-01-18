@@ -1,0 +1,56 @@
+---
+permalink: configure/add-storage-backend.html
+sidebar: sidebar
+keywords:
+summary: 'Storage backends are systems that the ESXi hosts use for data storage.'
+---
+= Add a storage backend
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+
+Storage backends are systems that the ESXi hosts use for data storage. You can add a storage backend using either the ONTAP tools Manager or the vSphere client UI.
+
+*About this task*
+
+This task helps you to onboard an ONTAP cluster. When you add storage backend using ONTAP tools Manager, the storage backend is added to the global cluster. Associate the global cluster with a vCenter Server instance to enable an SVM user for vVols datastore provisioning.
+
+[role="tabbed-block"]
+====
+
+.Using ONTAP tools Manager
+--
+
+[NOTE]
+A storage backend is global when added from ONTAP tools Manager or the ONTAP tools APIs. A storage backend is local when added from the vCenter Server APIs.
+For example, in a multi-tenant setup, you can add a storage backend (cluster) globally and SVM locally to use SVM user credentials.
+
+*Steps*
+
+. Launch ONTAP tools Manager from a web browser: `\https://loadBalanceIP:8443/virtualization/ui/` 
+. Log in with the ONTAP tools for VMware vSphere administrator credentials you provided during deployment. 
+. Select *Storage Backends* from the sidebar.
+. Select *Add*. 
+. Provide the Server IP address or FQDN, username, and password details and select *Add*.
+[NOTE]
+IPV4 and IPV6 management LIFs are supported. SVM user-based credentials with management LIFs are also supported.
+
+--
+
+.Using vSphere client UI
+--
+
+[NOTE]
+When you add a storage backend using the vSphere client UI, vVols datastore does not support adding of an SVM user directly.
+
+. Log in to the vSphere client using `\https://vcenterip/ui`
+. In the shortcuts page, click on *NetApp ONTAP tools* under the plug-ins section.
+. In the left pane of ONTAP tools, navigate to *Storage Backends* and select *Add*.
+. In the *Add Storage Backend* window, provide the Server IP address, username, password, and port details and click *Add*.
+[NOTE]
+You can add cluster-based credentials and IPV4 and IPV6 management LIFs or provide SVM-based credentials with management LIF of SVM to add an SVM user directly.
+
+The list gets refreshed, and you can see the newly added storage backend in the list.
+--
+====
